@@ -1,0 +1,23 @@
+
+<h1>Editing Event</h1>
+
+<%= render 'form', event: @event %>
+<%= link_to 'Show', @event %> |
+<%= link_to 'Back', events_path %>
+
+<script>
+    document.addEventListener('ready', function () {
+        //document.querySelectorAll('form').forEach(function (el) {
+        //    el.dataset.turbo = false
+        //})
+        $("#event_recurring").on("change", function() {
+            alert("This is actually firing!");
+            return $(this).recurring_select('changed');
+        });
+        var elem = document.getElementById("event_recurring");
+        console.error("elem: ", elem);
+        $("#event_recurring").change(function() {
+            alert( "Handler for .change() called." );
+        });
+    });
+</script>
