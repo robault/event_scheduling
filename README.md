@@ -12,7 +12,7 @@ Kind of.
 
 Ideally the JS would be a component and added as an actual NPM package. But it needs more heavily modified for that to work. 
 
-This is me, needing to move on to other things: ¯\_(ツ)_/¯
+This is me, needing to move on to other things: ¯\\_(ツ)_/¯
 
 ---
 Check out the gemfile for the additions. The updated Ruby gem is here:
