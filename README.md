@@ -37,4 +37,4 @@ Check out Adrian Bliss's short videos on YouTube, he's hilarious!
 
 https://www.youtube.com/@adrianbliss/featured
 
-{% include youtube.html id="6XzRCYfpjvE" %}
+[![Adrian Bliss | In The Body Compilation](https://pbs.twimg.com/ext_tw_video_thumb/1543693544308834305/pu/img/-ZpJi5XOw2ExzHT6.jpg)](https://www.youtube.com/watch?v=6XzRCYfpjvE)
