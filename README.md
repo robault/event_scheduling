@@ -6,20 +6,31 @@ https://gorails.com/episodes/recurring-events?autoplay=1
 
 ---
 
-This is a (working) Rails 7 application showing the use of the recurring_select Ruby gem and the Javascript code from the recurring-select NPM package. Both have been modified to work with Rails 7 and hotwire/stimulus using importmap.
+This is a (working-ish) Rails 7 application showing the use of the recurring_select Ruby gem and the Javascript code from the recurring-select NPM package. Both have been modified to work with Rails 7 and hotwire/stimulus using importmap.
 
 Kind of. 
 
-Ideally the JS would be a component and added as an actual NPM package. But it needs more heavily modified for that to work. I'll continue to work on it because so far it has been fun. But I'm also not a super strong JS dev so it may take a bit to finish. Send me a message if you're interested so I know someone else actually cares. 
+Ideally the JS would be a component and added as an actual NPM package. But it needs more heavily modified for that to work. 
 
-This is me, working in a vacuum: ¯\_(ツ)_/¯
+This is me, needing to move on to other things: ¯\_(ツ)_/¯
 
 ---
-
-The updated Ruby gem is here:
+Check out the gemfile for the additions. The updated Ruby gem is here:
 https://github.com/robault/recurring_select
 
 Uses Ruby 3.2.2
+
+```bash
+rbenv install 3.2.2
+rbenv global 3.2.2
+# exit and re-open terminal
+```
+
+Basic implementation taken from the GoRails tutorial but an event_controller.js has been added to handle the JS. (In: /app/javascript/controllers/event_controller.js)
+
+The dialog is imported from the /app/javascript/controllers/lib directory. The jquery-mobile-rs.js.js is untouched but the index.js is my first attempt at turning it into a component. IT IS NOT GOOD CODE.  
+
+And to be clear, it's not a 100% implementation of the GoRails tutorial. Just enough that you can see what's going on and how it works.
 
 ```bash
 bundle install
